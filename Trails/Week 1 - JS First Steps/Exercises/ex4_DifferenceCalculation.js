@@ -9,4 +9,4 @@ n4 = input.questionFloat("4) Enter the fourth value, please: ");
 
 diff = (n1 * n2) - (n3 * n4);
 
-console.log(`\n-> Difference: ${diff.toFixed(2)}`)
+console.log(`\n-> Difference: ${diff.toFixed(2)}`);
