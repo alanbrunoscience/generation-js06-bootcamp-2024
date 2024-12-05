@@ -1,4 +1,5 @@
 /*
+
 Com base na tabela abaixo, escreva um algoritmo que leia o código de um item (número inteiro entre 1 e 6) e a quantidade comprada deste item (número inteiro). A seguir, mostre na tela o valor total da conta e o nome do produto que foi comprado.
 
 |   Product Code   |    Products     |     Unit price     |        
@@ -8,6 +9,7 @@ Com base na tabela abaixo, escreva um algoritmo que leia o código de um item (n
 |        4         |      Bauru      |      R$ 12.00      |
 |        5         |   Refrigerante  |      R$  8.00      |
 |        6         | Suco de Laranja |      R$ 13.00      |
+
 */
 
 const input = require("readline-sync");
@@ -51,12 +53,12 @@ switch(code) {
         break;
     default:
         console.log("\nInvalid product code!");
+        process.exit(0);
 }
 
-if(totalPrice) {
-    console.log("\n\n========== ORDER INFO ==========\n")
-    console.log(`-> Order: ${quantity} * ${product};\n-> Total Amount: ${new Intl.NumberFormat('pt-br', {
-        style: 'currency',
-        currency: 'BRL',
-    }).format(totalPrice)}.\n`);
-}
+console.log("\n\n========== ORDER INFO ==========\n")
+console.log(`-> Order: ${quantity} * ${product};\n-> Total Amount: ${new Intl.NumberFormat('pt-br', {
+    style: 'currency',
+    currency: 'BRL',
+}).format(totalPrice)}.\n`);
+console.log("================================\n");
