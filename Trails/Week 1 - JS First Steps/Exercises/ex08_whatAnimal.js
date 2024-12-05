@@ -18,7 +18,7 @@ if(charac2 !== "bird" && charac2 !== "mammal" && charac2 !== "insect" && charac2
     process.exit(0);
 }
 
-let charac3 = input.question("3) Enter the third characteristic ('carnivore', 'omnivorous', 'herbivore', or 'hematophagous'): ").toLowerCase();;
+let charac3 = input.question("3) Enter the third characteristic ('carnivore', 'omnivorous', 'herbivore', or 'hematophagous'): ").toLowerCase();
 
 if(charac3 !== "carnivore" && charac3 !== "omnivorous" && charac3 !== "herbivore" && charac3 !== "hematophagous") {
     console.log("\n-> Invalid input! It must be 'carnivore', 'omnivorous', 'herbivore', or 'hematophagous'.");
