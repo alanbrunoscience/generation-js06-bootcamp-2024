@@ -25,26 +25,40 @@ if(charac3 !== "carnivore" && charac3 !== "omnivorous" && charac3 !== "herbivore
     process.exit(0);
 }
 
+let isFound = false;
+
 if(charac1 === "vertebrate" && charac2 === "bird" && charac3 === "carnivore") {
     console.log("\nThe animal is an eagle.");
+    isFound = true;
 } else if(charac1 === "vertebrate" && charac2 === "bird" && charac3 === "omnivorous") {
     console.log("\nThe animal is a dove.");
+    isFound = true;
 }
 
 if(charac1 === "vertebrate" && charac2 === "mammal" && charac3 === "omnivorous") {
     console.log("\nThe animal is a man.");
+    isFound = true;
 } else if(charac1 === "vertebrate" && charac2 === "mammal" && charac3 === "herbivore") {
     console.log("\nThe animal is a cow.");
+    isFound = true;
 }
 
 if(charac1 === "invertebrate" && charac2 === "insect" && charac3 === "hematophagous") {
     console.log("\nThe animal is a flea.");
+    isFound = true;
 } else if(charac1 === "invertebrate" && charac2 === "insect" && charac3 === "herbivore") {
     console.log("\nThe animal is a caterpillar.");
+    isFound = true;
 }
 
 if(charac1 === "invertebrate" && charac2 === "annelid" && charac3 === "hematophagous") {
     console.log("\nThe animal is a leech.");
+    isFound = true;
 } else if(charac1 === "invertebrate" && charac2 === "annelid" && charac3 === "omnivorous") {
     console.log("\nThe animal is a worm.");
+    isFound = true;
+}
+
+if(!isFound) {
+    console.log("\nAnimal not found!");
 }
