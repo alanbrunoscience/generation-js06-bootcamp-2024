@@ -19,3 +19,4 @@ if(position !== -1) {
 } else {
     console.log(`\n-> Number ${num} was not found!`);
 }
+
