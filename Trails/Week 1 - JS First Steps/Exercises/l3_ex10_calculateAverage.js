@@ -54,7 +54,7 @@ for(let i = 0; i < grades.length; i++) {
 console.log();
 console.table(grades);
 
-// Printing of grade averages array
+// Student grade average printing
 console.log("\n======= GRADE AVERAGE =======");
 for(let i = 0; i < arrayGradeAverages.length; i++) {
     if(arrayGradeAverages[i] !== arrayGradeAverages[arrayGradeAverages.length - 1])
