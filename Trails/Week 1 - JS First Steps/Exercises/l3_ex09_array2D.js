@@ -48,7 +48,6 @@ for(let i = 0; i < array2DInt.length; i++) {
 }
 
 // Printing values
-
 console.log("\n\n=============== RESULTS ===============\n")
 
 console.log("\n1) Elements of the Main Diagonal:\n");
