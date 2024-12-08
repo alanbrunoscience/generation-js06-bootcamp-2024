@@ -1,4 +1,8 @@
-// condição ? expressão_01 (true) : expressão_02 (false)
+/* Ternary If Operator
+
+condition ? expression_01 (true) : expression_02 (false)
+
+*/
 
 "use strict"
 
