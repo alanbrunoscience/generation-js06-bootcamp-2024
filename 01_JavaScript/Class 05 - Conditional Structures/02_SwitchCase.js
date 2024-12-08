@@ -1,5 +1,7 @@
 // Exercise: Plano de Saúde
 
+"use strict"
+
 const input = require("readline-sync");
 
 let name = input.question("1) Enter your full name: ");
