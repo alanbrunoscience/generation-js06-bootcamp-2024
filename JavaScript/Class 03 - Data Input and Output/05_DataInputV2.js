@@ -31,6 +31,10 @@ console.log("\n-> The string value typed was: " + word);
 
 /*
 
-- Na entrada de dados das variáveis do tipo ponto flutuante (números reais), ao digitar os valores, observe que os números decimais foram separados por ponto e não por vírgula. A explicação é simples: O JavaScript utiliza o padrão Americano, onde o separador de decimais é o ponto. Caso as casas decimais sejam zero, não é necessário digitar .00, basta digitar o número como se fosse um número inteiro. Caso você se esqueça e digite vírgula, ao invés do ponto, Pacote Readline-Sync irá ignorar a parte decimal e receberá apenas a parte inteira.
+- Na entrada de dados das variáveis do tipo ponto flutuante (números reais), ao digitar os valores, observe que os números decimais foram separados por ponto e não por vírgula. A explicação é simples: O JavaScript utiliza o padrão Americano, onde o separador de decimais é o ponto. Caso as casas decimais sejam zero, não é necessário digitar .00, basta digitar o número como se fosse um número inteiro. Caso você se esqueça e digite vírgula, ao invés do ponto, Pacote Readline-Sync irá ignorar a parte decimal e receberá apenas a parte inteira; 
+
+- O Método keyIn(), permite a digitação de um único caractere, sem o uso da tecla "Enter" para confirmar. Caso você digite mais de um caractere, ele será ignorado e o programa seguirá o seu fluxo;
+
+- Uma variável boolean, aceita somente os valores true ou false. O Método keyInYNStrict() restringe as opções de digitação em y 🡒 true e n 🡒 false. Caso você digite outras letras ou caracteres, o Método não irá aceitar e aguardará até que você digite uma das duas opções.
 
 */
