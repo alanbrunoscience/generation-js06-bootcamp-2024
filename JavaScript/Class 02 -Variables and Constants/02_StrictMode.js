@@ -1,6 +1,6 @@
 "use strict" // Declaração Obrigatória de Variáveis ("let", "var" ou "const")
 
-/*
+/* Modo Estrito
 
 O "strict mode" ou modo estrito no JavaScript é um recurso introduzido no ECMAScript 5 (ES5) para tornar o código mais seguro, eliminando comportamentos problemáticos ou erros silenciosos da linguagem. Ele faz isso aplicando regras mais rigorosas para escrita e execução do código, ajudando os desenvolvedores a evitar erros comuns e potencialmente perigosos.
 

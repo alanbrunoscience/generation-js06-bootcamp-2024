@@ -1,4 +1,4 @@
-/*
+/* Declaração de Constantes
 
 - Ao contrário de uma variável, uma constante não pode ser declarada sem um valor inicial e, além disso, este valor não pode ter seu valor alterado por atribuição direta;
 
