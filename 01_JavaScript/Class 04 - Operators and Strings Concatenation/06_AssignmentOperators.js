@@ -1,3 +1,9 @@
+/* Operadores de Atribuição
+
+- Os Operadores de Atribuição têm como função retornar um valor atribuído de acordo com a operação indicada. A operação é feita entre os dois operandos, sendo atribuído o resultado ao primeiro (=, +=, -=, entre outros).
+
+*/
+
 "use strict"
 
 let x = 4;
