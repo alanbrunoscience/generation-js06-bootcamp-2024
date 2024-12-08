@@ -29,4 +29,4 @@ switch (true) {
     categoria = "Idade inválida";
 }
 
-console.log(`\n-> O Cliente é: ${categoria}`);
+console.log(`\n-> Categoria do Cliente: ${categoria}.`);
