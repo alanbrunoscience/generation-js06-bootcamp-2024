@@ -1,3 +1,5 @@
+"use strict"
+
 let nome = "Rafael";
 let profissao = "Pessoa Desenvolvedora"
 let salarioBruto = 3500.44;

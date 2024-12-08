@@ -1,6 +1,10 @@
-/* Sobre as Variáveis
+"use strict"
 
-Quando eu defino uma variável como "var" ela se torna global (disponível para todo programa). Já a variável "let" é uma variável definida localmente (respeita o escopo). Como sugestão, utilizar o "let", ao invés do "var", para se ter um controle maior de variáveis. Caso eu deseje definir uma variável global com o "let", basta eu definí-la no início do programa. */
+/* Escopo de Variáveis
+
+- Quando eu defino uma variável como "var", ela fica disponível no escopo global, ou seja, disponível para todo programa. Já a variável declarada como "let", representa uma variável de escopo local, ou seja, ela só pode ser acessada dentro do bloco onde ela foi criada. Como sugestão, utilizar o "let" ao invés do "var", para se ter um controle maior das variáveis. Caso eu deseje definir uma variável de escopo global com o "let", basta eu definí-la no início do programa.
+
+*/
 
 const input = require('readline-sync'); // Importando a biblioteca readline-sync para ler valores
 
