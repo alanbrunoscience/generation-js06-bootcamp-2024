@@ -1,3 +1,16 @@
+/* Operadores Lógicos
+
+- Os Operadores Lógicos são utilizados para realizar comparações e validações, criando expressões condicionais complexas:
+
+-> && (Conjunção): Valida se dois dados são verdadeiros ("E");
+-> || (Disjunção): Valida se um dos dois dados apresentados são verdadeiros, ou se os dois são verdadeiros ("OU");
+-> ^ (Disjunção Exclusiva): Semelhante a Disjunção, entretanto valida apenas se um dos dois dados apresentados for verdadeiro e o outro dado for falso. Diferente da Disjunção, a opção cujo os dois dados são verdadeiros não é validada ("OU Exclusivo");
+-> ! (Negação): Inverte o valor, o que é verdadeiro passa a ser falso, o que é falso passa a ser verdadeiro ("Não").
+
+*/
+
+"user strict"
+
 const input = require("readline-sync");
 
 // User's Data
