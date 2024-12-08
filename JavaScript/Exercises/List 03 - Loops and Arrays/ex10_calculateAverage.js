@@ -1,4 +1,4 @@
-/*
+/* Enunciado do Exercício
 
 Elabore um algoritmo que leia as notas de uma turma com 10 participantes, dos 4 bimestres de um ano. As 4 notas de cada participante serão armazenadas em uma linha de uma matriz de números reais, logo cada linha da matriz representará as notas de um participante. Em um vetor de números reais, armazene as médias de cada participante e exiba as médias de cada um na tela.
 
@@ -18,14 +18,15 @@ do {
 
 } while(studentsNumber <= 0);
 
-let arrayGradeAverages = new Array(studentsNumber);
-
-// Creating a bi-dimensional array
+// Creating a bi-dimensional array to store all the students' grade
 let grades = new Array(studentsNumber);
 
 for(let i = 0; i < grades.length; i++) {
     grades[i] = Array(4);
 }
+
+// Creating an array to store the students' average
+let arrayGradeAverages = new Array(studentsNumber);
 
 // Filling up the values of the bi-dimensional array
 console.log("\n======= SCHOOL GRADES SUBMISSION =======");

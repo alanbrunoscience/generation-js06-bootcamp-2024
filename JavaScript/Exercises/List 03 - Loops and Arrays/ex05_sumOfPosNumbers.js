@@ -1,10 +1,10 @@
-"use strict"
-
-/*
+/* Enunciado do Exercício
 
 Escreva um algoritmo, que leia números inteiros via teclado, até que o número zero seja digitado. Ao final, mostre na tela a soma de todos os números digitados, que sejam positivos.
 
 */
+
+"use strict"
 
 const input = require("readline-sync");
 

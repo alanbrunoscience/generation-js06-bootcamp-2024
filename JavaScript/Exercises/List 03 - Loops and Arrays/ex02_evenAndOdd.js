@@ -1,10 +1,10 @@
-"use strict"
-
-/*
+/* Enunciado do Exercício
 
 Escreva um algoritmo, que leia 10 números inteiros via teclado e mostre na tela quantos números são pares e quantos número são ímpares. Veja o exemplo abaixo:
 
 */
+
+"use strict"
 
 const input = require("readline-sync");
 

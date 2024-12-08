@@ -1,10 +1,10 @@
-"use strict"
-
-/*
+/* Enunciado do Exercício
 
 Escreva um algoritmo, que leia a idade de várias pessoas (números inteiros), via teclado e mostre na tela o total de pessoas cuja idade seja menor que 21 anos e o total de pessoas cuja idade, seja maior que 50 anos. A leitura dos dados deve ser finalizada ao digitar uma idade negativa. Veja o exemplo abaixo:
 
 */
+
+"use strict"
 
 const input = require("readline-sync");
 

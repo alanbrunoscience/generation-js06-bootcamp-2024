@@ -1,3 +1,5 @@
+"use strict"
+
 const input = require("readline-sync");
 
 let grossSalary, nightShiftAllowance, overtime, discounts, netSalary;

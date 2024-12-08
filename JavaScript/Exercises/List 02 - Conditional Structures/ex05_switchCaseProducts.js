@@ -1,4 +1,4 @@
-/*
+/* Enunciado do Exercício
 
 Com base na tabela abaixo, escreva um algoritmo que leia o código de um item (número inteiro entre 1 e 6) e a quantidade comprada deste item (número inteiro). A seguir, mostre na tela o valor total da conta e o nome do produto que foi comprado.
 
@@ -11,6 +11,8 @@ Com base na tabela abaixo, escreva um algoritmo que leia o código de um item (n
 |        6         | Suco de Laranja |      R$ 13.00      |
 
 */
+
+"use strict"
 
 const input = require("readline-sync");
 

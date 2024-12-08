@@ -1,4 +1,10 @@
-/* Escreva um algoritmo que leia um número inteiro via teclado e mostre na tela uma mensagem indicando se este número é par ou ímpar e se o número é positivo ou negativo. */
+/* Enunciado do Exercício
+
+Escreva um algoritmo que leia um número inteiro via teclado e mostre na tela uma mensagem indicando se este número é par ou ímpar e se o número é positivo ou negativo. 
+
+*/
+
+"use strict"
 
 const input = require("readline-sync");
 

@@ -1,6 +1,4 @@
-"use strict"
-
-/*
+/* Enunciado do Exercício
 
 Elabore um algoritmo que leia 10 números inteiros e armazene em um vetor. Em seguida, mostre na tela:
 
@@ -10,6 +8,8 @@ Elabore um algoritmo que leia 10 números inteiros e armazene em um vetor. Em se
 - A Média de todos os elementos do vetor, armazenada em uma variável do tipo real.
 
 */
+
+"use strict"
 
 const input = require("readline-sync");
 
