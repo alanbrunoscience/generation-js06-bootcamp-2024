@@ -1,5 +1,11 @@
 "use strict"
 
+/*
+
+Por uma questão de organização e boas práticas, é comum declarar todas as variáveis no início do código, agrupando aquelas de tipos semelhantes em uma mesma linha. Isso facilita a leitura e manutenção do código.
+
+*/
+
 let nome = "Rafael";
 let profissao = "Pessoa Desenvolvedora"
 let salarioBruto = 3500.44;
