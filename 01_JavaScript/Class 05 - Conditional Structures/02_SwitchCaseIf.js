@@ -1,6 +1,6 @@
-/* SWITCH CASE como IF
+/* Switch Case como If-Else
 
-- O JavaScript, diferentemente de outras linguagens, consegue implementar um SWITCH CASE de forma similar a um IF ELSE, mas com algumas diferenças no modo de operação.
+- O JavaScript, diferentemente de outras linguagens, consegue implementar um "Switch Case" de forma similar a um "If-Else", mas com algumas diferenças no modo de operação.
 
 */
 
