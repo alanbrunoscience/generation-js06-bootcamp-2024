@@ -1,3 +1,5 @@
+"use strict"
+
 const  input = require("readline-sync");
 
 let num, i;

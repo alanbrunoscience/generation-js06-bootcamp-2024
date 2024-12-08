@@ -1,5 +1,7 @@
 // The “for” loop is used when the stopping condition is known.
 
+"use strict"
+
 const input = require("readline-sync");
 
 let name;
