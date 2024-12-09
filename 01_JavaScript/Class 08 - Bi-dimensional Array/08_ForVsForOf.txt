@@ -1,0 +1,19 @@
+Diferenças entre os Laços de Repetição For e For of:
+
+For:
+
+- A declaração de incremento / decremento é obrigatória;
+
+- É apropriado quando os dados do Array precisam ser modificados;
+
+- Ele mantém o controle do índice, desta forma é possível obter um índice do array.
+
+===========================================================================================
+
+For Of:
+
+- O contador sempre é incrementado em 1 e não é permitido decrementar;
+
+- Não é apropriado quando os dados do Array precisam ser modificados;
+
+- Ele não mantém o controle do índice, desta forma não é possível obter um índice do array.
