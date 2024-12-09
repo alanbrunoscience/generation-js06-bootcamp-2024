@@ -24,3 +24,11 @@ for (let i = 0; i < array2DInt.length; i++) {
 
 console.log();
 console.table(array2DInt);
+
+
+console.log();
+for (let i = 0; i < array2DInt.length; i ++){
+    for (let j = 0; j < array2DInt[i].length; j ++){  
+        console.log(`2D Array [${i}][${j}]: ${array2DInt[i][j]}`);
+    }
+}
