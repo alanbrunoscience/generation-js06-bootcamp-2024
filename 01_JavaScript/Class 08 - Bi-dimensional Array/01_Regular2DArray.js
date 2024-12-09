@@ -1,3 +1,9 @@
+/* Regular or Square Matrices
+
+- These have the same number of rows and columns.
+
+*/
+
 "use strict"
 
 const input = require("readline-sync");

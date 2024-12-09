@@ -1,3 +1,9 @@
+/* Irregular Matrices
+
+- These are Matrices that have a different number of rows and columns.
+
+*/
+
 "use strict"
 
 const input = require("readline-sync");
