@@ -3,8 +3,9 @@ import readlineSync = require("readline-sync");
 const colors: Array<string> = new Array<string>(5);
 
 // Data Input
+console.log("======== Colors Input ========");
 for(let i = 0; i < colors.length; i++) {
-    colors[i] = readlineSync.question(`\n-> Enter the ${i+1}º color: `);
+    colors[i] = readlineSync.question(`\n${i+1}) Enter the color name: `);
 }
 
 // Display all the colors entered
@@ -14,7 +15,6 @@ for(let color of colors) {
 }
 
 // Display sorted Collection Array
-
 colors.sort();
 
 console.log("\n\n=== Sorted Colors ===\n");
