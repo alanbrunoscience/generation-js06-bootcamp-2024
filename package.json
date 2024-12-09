@@ -14,5 +14,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/readline-sync": "^1.4.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanbrunoscience/generation-js06-bootcamp-2024.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/alanbrunoscience/generation-js06-bootcamp-2024/issues"
+  },
+  "homepage": "https://github.com/alanbrunoscience/generation-js06-bootcamp-2024#readme"
 }
