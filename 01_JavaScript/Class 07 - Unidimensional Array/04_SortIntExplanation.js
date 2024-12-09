@@ -6,6 +6,8 @@ Para classificar números corretamente, precisamos utilizar uma função de comp
 
 */
 
+"use strict"
+
 let vetorNumeros = [10, 15, 5, 70, 140];
 
 // Função de Comparação - Ordem Crescente
@@ -38,7 +40,7 @@ for (let indice = 0; indice < vetorNumeros.length; indice++) {
 
 /*
 
-Quando passamos como parâmetro do Método sort() uma função de comparação, o Método sort() fará a ordenação do vetor utilizando a função de comparação como critério de ordenação.
+Quando passamos como parâmetro do método sort() uma função de comparação, este método fará a ordenação do vetor utilizando a função de comparação como critério de ordenação.
 
 A função de comparação acima, recebe dois elementos do array como argumentos e retorna:
 

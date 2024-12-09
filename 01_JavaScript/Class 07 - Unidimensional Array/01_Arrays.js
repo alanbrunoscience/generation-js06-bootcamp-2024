@@ -24,4 +24,4 @@ console.log("5º elemento da lista: " + vetorstring[4]);
 
 */
 
-console.log(`\nThe array's length is: ${arrayStrings.length}`); // O "length" é usado para medir o tamanho do vetor, ou melhor, a quantidade de elementos armazenados.
+console.log(`\nThe array's length is: ${arrayStrings.length}`); // O "length" é usado para medir o tamanho do vetor, ou seja, a quantidade de elementos armazenados.
