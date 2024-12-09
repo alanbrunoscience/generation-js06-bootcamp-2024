@@ -46,9 +46,7 @@ for(let i = 0; i < grades.length; i++) {
 
     }
 
-    let average = sumGrades / 4;
-
-    arrayGradeAverages[i] = average;
+    arrayGradeAverages[i] = sumGrades / 4;
 
 }
 
