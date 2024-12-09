@@ -8,11 +8,11 @@ fruits.add("Mango");
 
 console.table(fruits);
 
-console.log("\n-> Is the strawberry on set? ", fruits.has("Strawberry"));
+console.log("\n-> Is the strawberry in the Set Collection? ", fruits.has("Strawberry"));
 
 fruits.delete("Khaki");
 
-console.log("\nSet without 'Khaki:'\n");
+console.log("\n-> Set without 'Khaki:'\n");
 console.table(fruits);
 
 // Sorting a Set
