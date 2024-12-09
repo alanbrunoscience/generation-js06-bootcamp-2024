@@ -8,6 +8,8 @@
 -> Iterar sobre os dados de maneira eficiente;
 -> Buscar elementos com base em critérios específicos.
 
+- O Array sempre respeita a ordem em que o Objeto foi inserido, ou seja, a cada novo Objeto inserido, uma nova linha será criada após o último Objeto adicionado.
+
 */
 
 // Create an array, of type "number", called grades and initialize it
