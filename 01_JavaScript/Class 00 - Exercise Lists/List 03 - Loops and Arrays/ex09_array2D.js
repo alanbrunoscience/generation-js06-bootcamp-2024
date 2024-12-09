@@ -35,16 +35,16 @@ for(let i = 0; i < array2DInt.length; i++) {
 }
 
 // Getting values from the secondary diagonal
-let relLength = array2DInt.length;
+let relativeLength = array2DInt.length;
 
 for(let i = 0; i < array2DInt.length; i++) {
-    for(let j = 0; j < relLength; j++) {
-        if(array2DInt[i][j] === array2DInt[i][relLength - 1]) {
+    for(let j = 0; j < relativeLength; j++) {
+        if(array2DInt[i][j] === array2DInt[i][relativeLength - 1]) {
             secDiagElem.push(array2DInt[i][j]);
             sumSecDiagElem += array2DInt[i][j];
         }
     }
-    relLength -= 1;
+    relativeLength -= 1;
 }
 
 // Printing values
