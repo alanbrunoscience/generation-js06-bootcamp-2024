@@ -10,40 +10,64 @@
 
 */
 
-import readlinesync = require("readline-sync");
+// Create an array, of type "number", called grades and initialize it
+const grades: Array<number> = new Array<number>(7.0, 5.0, 4.0, 10.0);
 
-// Creating an empty array collection
-const numbers: Array<number> = new Array<number>();
-
-// Adding values in the Collection
-numbers.push(7);
-numbers.push(2);
-numbers.push(5);
-numbers.push(10);
-numbers.push(7, 3); // Adding more than one value on the array but at the end
-
-// Listing data that were added
-for(let number of numbers) {
-    console.log(number);
+// Display on the screen all the grades added. To display the grades, it'll be used the For...of loop
+console.log("=== Recorded Grades ===\n");
+for(let grade of grades) {
+    console.log(grade.toFixed(2));
 }
 
-// Adding values from the user
-numbers.push(readlinesync.questionFloat("\n-> Enter a number, please: "));
+// Add a new grade - duplicated
+grades.push(4.0) // Adds one or more elements to the END of the array and returns the new array length.
 
-numbers.unshift(2, 4.5, 8, 9); // Adding more than one value on the array but at the beginning
+// Display the grades again, including the duplicated grade
+console.log("\n=== Recorded Grades (Grade Value '4.0' Inserted At The End) ===\n");
+for(let grade of grades) {
+    console.log(grade.toFixed(2));
+}
 
-console.log();
-console.table(numbers);
+// Add some grades at the BEGINNING of the array
+grades.unshift(2.5, 9.0);
 
+// Display all the grades again
+console.log("\n=== Recorded Grades (Grades Value '2.5' and '9.0' Inserted At The Beginning) ===\n");
+for(let grade of grades) {
+    console.log(grade.toFixed(2));
+}
 
-// Searching for values ​​in the array
-console.log("\n-> Is there the number 5 on the array? ", numbers.includes(5)); // Checking if there is a specific number in the collection
+// Display the position (index) of a specific grade. If there are two identical grades, only the position of the first grade found will be shown
+console.log(`\n-> The index of grade value '5.0' is ${grades.indexOf(5)}.`);
 
-console.log("\n-> What is the index of number 3 in the array? ", numbers.indexOf(3)); // Checking what the index of an element is
+// Display whether a specific grade is in the array
+console.log(`\n-> Is there a grade value '5.0' in the array? ${grades.includes(5)}.`);
 
+// Display the grade entered at a specific position (index) in the array
+console.log(`\n-> The grade of position 1 in the array is ${grades[1].toFixed(2)}.`);
 
-// Deleting array elements
-numbers.splice(numbers.indexOf(10), 1); // Deleting ONE NUMBER from the collection. If, instead, "numbers.splice(numbers.indexOf(10), 1)" were placed "numbers.splice(numbers.indexOf(10), 2)", the element would be deleted, and the next
+// Change the grade value "5.0" to "6.0" and display if the change was made
+grades[grades.indexOf(5)] = 6.0;
 
-console.log();
-console.table(numbers);
+console.log(`\n-> The grade value '5.0' was changed to '6.0':\n`);
+console.log("=== Recorded Grades Updated ===\n");
+for(let grade of grades) {
+    console.log(grade.toFixed(2));
+}
+
+// Delete the first reference of the grade value "4.00" in the array and show the changes made
+grades.splice(grades.indexOf(4.0), 1); // splice(<index>, <how many elements will be removed or added from the given index>, <list of elements that will be inserted>)
+
+console.log("\n-> Was the value of the 1st grade '4.00' deleted? \n");
+console.log("=== Recorded Grades Updated ===\n");
+for(let grade of grades) {
+    console.log(grade.toFixed(2));
+}
+
+// Display the array length (number of elements inserted)
+console.log(`\n-> The length of the current array is ${grades.length}.`);
+
+// Clear the array and show that it is empty
+grades.length = 0;
+
+console.log(`\n-> The array is empty! So its current length is ${grades.length}.`);

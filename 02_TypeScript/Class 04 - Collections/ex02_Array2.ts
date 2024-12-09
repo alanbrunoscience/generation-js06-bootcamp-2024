@@ -1,15 +1,3 @@
-/* Collection Array
-
-- A Collection Array é um objeto global que representa um array tradicional, ou seja, uma coleção de dados indexada, onde os elementos são armazenados em posições específicas (índices) e ordenados sequencialmente. Para acessar ou manipular um elemento em um array, utilizamos o índice correspondente, que representa sua posição dentro da estrutura.
-
-- Um dos grandes benefícios da Collection Array é o controle total que ela oferece ao desenvolvedor. Por meio de diversos métodos nativos, é possível:
-
--> Adicionar, remover ou atualizar elementos;
--> Iterar sobre os dados de maneira eficiente;
--> Buscar elementos com base em critérios específicos.
-
-*/
-
 import readlinesync = require("readline-sync");
 
 // Creating an empty array collection
