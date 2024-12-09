@@ -6,7 +6,7 @@ let groupB = ["Samantha", "Letícia", "Alan"];
 console.log("Are the arrays the same? ");
 
 if (groupA.toString() === groupB.toString()) { // Convert arrays to strings using the "toString()" method 
-  console.log("Yes, they are.");
+  console.log("\n-> Yes! They are.");
 } else {
-  console.log("No, they're different.");
+  console.log("\n-> No! They're different.");
 }
