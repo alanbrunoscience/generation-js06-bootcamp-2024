@@ -6,6 +6,8 @@
 |      4       |      Other     |
 */
 
+"use strict"
+
 const input = require("readline-sync");
 
 let age,
