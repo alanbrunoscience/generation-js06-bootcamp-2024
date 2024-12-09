@@ -9,3 +9,8 @@ for (let i = 0; i < arrayInt.length; i++) {
 }
 
 console.table(arrayInt);
+
+// console.log();
+// for (let i = 0; i < arrayInt.length; i++) {
+//     console.log(`${i + 1}º number: ${arrayInt[i]}`);
+// }
