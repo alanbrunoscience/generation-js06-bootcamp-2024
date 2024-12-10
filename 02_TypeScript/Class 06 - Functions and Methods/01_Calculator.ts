@@ -87,7 +87,7 @@ function multiply(number1: number, number2: number): number {
 }
 
 function divide(number1: number, number2: number): number | null {
-    let division = number1 / number2;
+    let division: number = number1 / number2;
     return (division !== Infinity ? division: null);
 }
 
