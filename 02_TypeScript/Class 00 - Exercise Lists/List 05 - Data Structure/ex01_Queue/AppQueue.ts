@@ -4,7 +4,7 @@ import readlineSync = require("readline-sync");
 const queue = new Queue<string>();
 
 let option: number;
-let clientName, formattedName: string;
+let customerName, formattedName: string;
 
 do {
 
@@ -13,86 +13,56 @@ do {
     switch(option) {
         case 1:
 
-            console.log("\nAdd New Client on Queue:\n");
-            clientName = readlineSync.question("-> Enter the client name to be added to the queue: ");
-
-            formattedName = toTitleCase(clientName);
-
-            queue.enqueue(formattedName);
-
-            console.log(`\n['${formattedName}' was registered successfully on the queue!]`);
-
+            addCustomerQueue();
             break;
 
         case 2:
 
-            if(!queue.isEmpty()) {
-                console.log("\nWaiting Queue:\n");
-                queue.printQueue();
-            } else {
-                console.log("\n-> The queue is empty!");
-            }
-            
+            listCustomersQueue();
             break;
 
         case 3:
 
-            if(!queue.isEmpty()) {
-                console.log("\nClient Being Served:\n");
-                console.log(`- ${queue.dequeue()}.`);
-            } else {
-                console.log("\n-> The queue is empty!");
-            }
-                
+            callNextCustomer();
             break;
 
         case 4:
 
-            if(!queue.isEmpty()) {
-                console.log("\nThe Next Client To Be Called Is:\n");
-                console.log(`- ${queue.peek()}.`);
-            } else {
-                console.log("\n-> The queue is empty!");
-            }
-
+            nextCustomer();
             break;
 
         case 5:
 
-            
-            console.log("\nSearch for a client on the queue:\n");
-            clientName = readlineSync.question("-> Enter the client name to be searched on the queue: ");
-
-            formattedName = toTitleCase(clientName);
-
-            queue.contains(formattedName);
-
-            console.log(`\n[The '${formattedName}' is still in waiting queue at the ${queue.indexOf(formattedName) + 1}º position]`);
-
+            searchCustomer();
             break;
 
         case 6:
+
+            countCustomers();
             break;
+
         case 7:
             console.log("\nFinishing the program...");
             break;
         default:
-            console.log("\n-> Invalid option! Choose an option between 1 and 7.\n");
+            console.log("\n-> Invalid option! Choose an option between 1 and 7.");
     }
 
 } while(option != 7);
 
+
+// Functions Declaration
 function menu(): number {
 
     console.log("\n********************************************************");
     console.log("\n                   Waiting Queue Menu                   \n");
     console.log("********************************************************");
-    console.log("\n 1 - Add new client on queue;" + 
-        "\n 2 - List all clients;" +
-        "\n 3 - Call next client;" +
-        "\n 4 - View the next client to be called;" +
-        "\n 5 - Check if a specific client is in the waiting queue;" +
-        "\n 6 - Check the total clients on the waiting list;" +
+    console.log("\n 1 - Add new customer to the queue;" +
+        "\n 2 - List all customers still waiting in the queue;" +
+        "\n 3 - Call next customer;" +
+        "\n 4 - View the next customer to be called;" +
+        "\n 5 - Check if a specific customer is in the waiting queue;" +
+        "\n 6 - Check the total customers in the waiting queue;" +
         "\n 7 - Exit."
     );
     option = readlineSync.questionInt("\n-> Choose an option above: ", {limitMessage: "\n-> Invalid data type entered!"});
@@ -102,11 +72,86 @@ function menu(): number {
 
 }
 
-// Helper function to convert strings to Title Case
-function toTitleCase(clientName: string) {
-    return clientName
+function toTitleCase(customerName: string) {
+    return customerName
         .toLowerCase()
         .split(" ")
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ");
+}
+
+function addCustomerQueue(): void {
+
+    console.log("\nAdd New Customer To The Queue:\n");
+    customerName = readlineSync.question("-> Enter the Customer name to be added to the queue: ");
+
+    formattedName = toTitleCase(customerName);
+
+    queue.enqueue(formattedName);
+
+    console.log(`\n[ '${formattedName}' was successfully added to the queue! ]`);
+
+}
+
+function listCustomersQueue(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nWaiting Queue:\n");
+        queue.printQueue();
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
+}
+
+function callNextCustomer(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nCustomer Being Served:\n");
+        console.log(`- ${queue.dequeue()}.`);
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
+}
+
+function nextCustomer(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nThe Next Customer To Be Called Is:\n");
+        console.log(`- ${queue.peek()}.`);
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
+}
+
+function searchCustomer(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nSearch For A Customer In The Queue:\n");
+        customerName = readlineSync.question("-> Enter the customer name to be searched in the queue: ");
+
+        formattedName = toTitleCase(customerName);
+
+        if(queue.contains(formattedName)) {
+            console.log(`\n[ '${formattedName}' is still waiting in the queue in the ${queue.indexOf(formattedName) + 1}º position. ]`);
+        } else {
+            console.log(`\n[ 'There is no ${formattedName}' waiting in the queue. ]`);
+        }
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
+}
+
+function countCustomers(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nTotal Number of Customers Still In The Waiting Queue:\n");
+        console.log(`- ${queue.count()} Customer(s).`);
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
 }
