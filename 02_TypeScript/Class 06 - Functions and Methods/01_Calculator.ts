@@ -1,4 +1,5 @@
 import readlineSync = require("readline-sync");
+import { colors } from '../util/colors';
 
 let number1: number;
 let number2: number;
@@ -16,7 +17,7 @@ do {
 
     switch(option) {
         case 1:
-            // Desestruturação do Objeto
+            // Object Destructuring
             [number1, number2] = getNumbers();
             console.log(`\n-> ${number1} + ${number2} = ${add(number1, number2)}\n`);
             break;
@@ -48,6 +49,7 @@ do {
 
 function menu(): number {
 
+    console.log(colors.bg.black, colors.fg.green);
     console.log("****************************");
     console.log("         Calculator         ");
     console.log("****************************");
@@ -58,6 +60,9 @@ function menu(): number {
     console.log("0 - Exit.");
     console.log("\n****************************");
     option = readlineSync.questionInt("\n-> Choose an option above: ", {limitMessage: "\n-> Invalid data type entered!"});
+
+    // Reset colors after user input
+    console.log(colors.reset);
 
     return option;
 
