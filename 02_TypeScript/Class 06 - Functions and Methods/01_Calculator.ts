@@ -19,15 +19,15 @@ do {
         case 1:
             // Desestruturação do Objeto
             [number1, number2] = getNumbers();
-            console.log(`\n${number1} + ${number2} = ${add(number1, number2)}`);
+            console.log(`\n-> ${number1} + ${number2} = ${add(number1, number2)}\n`);
             break;
         case 2:
             [number1, number2] = getNumbers();
-            console.log(`\n${number1} - ${number2} = ${subtract(number1, number2)}`);
+            console.log(`\n-> ${number1} - ${number2} = ${subtract(number1, number2)}\n`);
             break;
         case 3:
             [number1, number2] = getNumbers();
-            console.log(`\n${number1} * ${number2} = ${multiply(number1, number2)}`);
+            console.log(`\n-> ${number1} * ${number2} = ${multiply(number1, number2)}\n`);
             break;
         case 4:
             [number1, number2] = getNumbers();
@@ -35,9 +35,9 @@ do {
             let result = divide(number1, number2);
 
             if(result !== null) {
-                console.log(`\n${number1} / ${number2} = ${divide(number1, number2)}`);
+                console.log(`\n-> ${number1} / ${number2} = ${divide(number1, number2)?.toFixed(2)}\n`);
             } else {
-                console.log(`\n-> There is no division by zero!`);
+                console.log(`\n-> There is no division by zero!\n`);
             }
 
             break;
@@ -65,8 +65,8 @@ function menu(): number {
 } 
 
 function getNumbers(): [number, number] { 
-    const number1 = readlineSync.questionFloat("\nEnter the first integer: ", {limitMessage: "\n-> Invalid data type entered!"});
-    const number2 = readlineSync.questionFloat("\nEnter the second integer: ", {limitMessage: "\n-> Invalid data type entered!"});
+    const number1 = readlineSync.questionFloat("\n1) Enter the first integer: ", {limitMessage: "\n-> Invalid data type entered!"});
+    const number2 = readlineSync.questionFloat("2) Enter the second integer: ", {limitMessage: "\n-> Invalid data type entered!"});
     return [number1, number2];
 }
 
