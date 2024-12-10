@@ -11,4 +11,36 @@ import { Stack } from "./Stack";
 
 const stack = new Stack<string>();
 
-stack.push("")
+stack.push("Green Dish");
+stack.push("Blue Dish");
+stack.push("White Dish");
+stack.push("Yellow Dish");
+stack.push("Red Dish");
+
+console.log("\nShow all stack elements:\n");
+stack.printStack();
+
+console.log("\n-> Remove the element: " + stack.pop());
+
+console.log("\nShow all stack elements:\n");
+stack.printStack();
+
+console.log("\n-> Add element 'Purple Dish'.");
+stack.push("Purple Dish");
+
+console.log("\nShow all stack elements:\n");
+stack.printStack();
+
+console.log("\n-> Display the top element of the stack: " + stack.peek());
+
+console.log("\n-> View stack size: " + stack.count());
+
+console.log("\n-> Check if element 'Green Dish' exists in the stack? " + stack.contains("Green Dish"));
+
+console.log("\n-> Check if element 'Lime Green Plate' exists in the stack? " + stack.contains('Lime Green Plate'));
+
+console.log("\n-> Clear the stack...");
+
+stack.clear();
+
+console.log("\n-> Is the stack empty? " + stack.isEmpty());
