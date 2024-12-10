@@ -42,13 +42,18 @@ do {
             break;
 
         case 7:
+
+            resetQueue();
+            break;
+
+        case 8:
             console.log("\nFinishing the program...");
             break;
         default:
             console.log("\n-> Invalid option! Choose an option between 1 and 7.");
     }
 
-} while(option != 7);
+} while(option != 8);
 
 
 // Functions Declaration
@@ -63,7 +68,8 @@ function menu(): number {
         "\n 4 - View the next customer to be called;" +
         "\n 5 - Check if a specific customer is in the waiting queue;" +
         "\n 6 - Check the total customers in the waiting queue;" +
-        "\n 7 - Exit."
+        "\n 7 - Remove all the customers from the queue at once;" +
+        "\n 8 - Exit."
     );
     option = readlineSync.questionInt("\n-> Choose an option above: ", {limitMessage: "\n-> Invalid data type entered!"});
     console.log("\n********************************************************");
@@ -137,7 +143,7 @@ function searchCustomer(): void {
         if(queue.contains(formattedName)) {
             console.log(`\n[ '${formattedName}' is still waiting in the queue in the ${queue.indexOf(formattedName) + 1}º position. ]`);
         } else {
-            console.log(`\n[ 'There is no ${formattedName}' waiting in the queue. ]`);
+            console.log(`\n[ There is no '${formattedName}' waiting in the queue. ]`);
         }
     } else {
         console.log("\n-> The queue is empty!");
@@ -150,6 +156,18 @@ function countCustomers(): void {
     if(!queue.isEmpty()) {
         console.log("\nTotal Number of Customers Still In The Waiting Queue:\n");
         console.log(`- ${queue.count()} Customer(s).`);
+    } else {
+        console.log("\n-> The queue is empty!");
+    }
+
+}
+
+function resetQueue(): void {
+
+    if(!queue.isEmpty()) {
+        console.log("\nRemoving All Customers From the Queue...\n");
+        queue.clear();
+        console.log(`-> Total customers in queue: ${queue.count()} customer(s).`);
     } else {
         console.log("\n-> The queue is empty!");
     }
