@@ -7,6 +7,7 @@ interface queueInterface<Type> {
    peek(): Type | undefined;
    contains(dataItem: Type): boolean;
    clear(): void;
+   indexOf(dataItem: Type): number;
 }
 
 export class Queue<Type> implements queueInterface<Type> {
@@ -70,6 +71,10 @@ export class Queue<Type> implements queueInterface<Type> {
 
    clear(): void {
       this.QueueData.length = 0;
+   }
+
+   indexOf(dataItem: Type): number {
+      return this.QueueData.indexOf(dataItem);
    }
 
 }

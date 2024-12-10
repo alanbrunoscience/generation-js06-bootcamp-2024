@@ -4,6 +4,7 @@ import readlineSync = require("readline-sync");
 const queue = new Queue<string>();
 
 let option: number;
+let clientName, formattedName: string;
 
 do {
 
@@ -13,9 +14,9 @@ do {
         case 1:
 
             console.log("\nAdd New Client on Queue:\n");
-            let clientName: string = readlineSync.question("-> Enter the client name to be added to the queue: ");
+            clientName = readlineSync.question("-> Enter the client name to be added to the queue: ");
 
-            let formattedName: string = toTitleCase(clientName);
+            formattedName = toTitleCase(clientName);
 
             queue.enqueue(formattedName);
 
@@ -47,11 +48,29 @@ do {
 
         case 4:
 
-            
+            if(!queue.isEmpty()) {
+                console.log("\nThe Next Client To Be Called Is:\n");
+                console.log(`- ${queue.peek()}.`);
+            } else {
+                console.log("\n-> The queue is empty!");
+            }
 
             break;
+
         case 5:
+
+            
+            console.log("\nSearch for a client on the queue:\n");
+            clientName = readlineSync.question("-> Enter the client name to be searched on the queue: ");
+
+            formattedName = toTitleCase(clientName);
+
+            queue.contains(formattedName);
+
+            console.log(`\n[The '${formattedName}' is still in waiting queue at the ${queue.indexOf(formattedName) + 1}º position]`);
+
             break;
+
         case 6:
             break;
         case 7:
@@ -65,19 +84,19 @@ do {
 
 function menu(): number {
 
-    console.log("\n****************************************************");
-    console.log("\n                 Waiting Queue Menu                 \n");
-    console.log("****************************************************");
+    console.log("\n********************************************************");
+    console.log("\n                   Waiting Queue Menu                   \n");
+    console.log("********************************************************");
     console.log("\n 1 - Add new client on queue;" + 
         "\n 2 - List all clients;" +
         "\n 3 - Call next client;" +
         "\n 4 - View the next client to be called;" +
-        "\n 5 - Check if a client is still waiting;" +
+        "\n 5 - Check if a specific client is in the waiting queue;" +
         "\n 6 - Check the total clients on the waiting list;" +
         "\n 7 - Exit."
     );
     option = readlineSync.questionInt("\n-> Choose an option above: ", {limitMessage: "\n-> Invalid data type entered!"});
-    console.log("\n****************************************************");
+    console.log("\n********************************************************");
 
     return option;
 
