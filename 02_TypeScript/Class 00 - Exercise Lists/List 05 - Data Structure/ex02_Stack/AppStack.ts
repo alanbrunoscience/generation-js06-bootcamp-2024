@@ -42,6 +42,11 @@ do {
             break;
 
         case 7:
+
+            clearStack();
+            break;
+
+        case 8:
             console.log("\nFinishing the program...");
             break;
         default:
@@ -150,6 +155,18 @@ function countBooks(): void {
     if(!stack.isEmpty()) {
         console.log("\nTotal Number of Books In The Stack:\n");
         console.log(`- ${stack.count()} book(s).`);
+    } else {
+        console.log("\n-> The stack is empty!");
+    }
+
+}
+
+function clearStack(): void {
+
+    if(!stack.isEmpty()) {
+        console.log("\nRemoving All Books From the Stack...\n");
+        stack.clear();
+        console.log(`-> Total books in the stack: ${stack.count()} book(s).`);
     } else {
         console.log("\n-> The stack is empty!");
     }

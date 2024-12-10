@@ -43,7 +43,7 @@ do {
 
         case 7:
 
-            resetQueue();
+            clearQueue();
             break;
 
         case 8:
@@ -68,7 +68,7 @@ function menu(): number {
         "\n 4 - View the next customer to be called;" +
         "\n 5 - Check if a specific customer is in the waiting queue;" +
         "\n 6 - Check the total customers in the waiting queue;" +
-        "\n 7 - Remove all the customers from the queue at once;" +
+        "\n 7 - Remove all customers from the queue at once;" +
         "\n 8 - Exit."
     );
     option = readlineSync.questionInt("\n-> Choose an option above: ", {limitMessage: "\n-> Invalid data type entered!"});
@@ -162,12 +162,12 @@ function countCustomers(): void {
 
 }
 
-function resetQueue(): void {
+function clearQueue(): void {
 
     if(!queue.isEmpty()) {
         console.log("\nRemoving All Customers From the Queue...\n");
         queue.clear();
-        console.log(`-> Total customers in queue: ${queue.count()} customer(s).`);
+        console.log(`-> Total customers in the queue: ${queue.count()} customer(s).`);
     } else {
         console.log("\n-> The queue is empty!");
     }
