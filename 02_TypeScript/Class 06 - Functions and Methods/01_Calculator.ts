@@ -1,4 +1,3 @@
-import { get } from "http";
 import readlineSync = require("readline-sync");
 
 let number1: number;
