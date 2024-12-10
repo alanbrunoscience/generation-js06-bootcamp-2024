@@ -8,15 +8,6 @@ Para doar sangue é necessário ter entre 18 e 69 anos. Pessoas com idade entre 
 
 const input = require("readline-sync");
 
-// Helper function to convert strings to Title Case
-function toTitleCase(str) {
-    return str
-        .toLowerCase()
-        .split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-}
-
 let name = input.question("1) Enter you name, please: ");
 let age = input.questionInt("2) How old are you? ");
 let isDonorInput = input.question("3) Is this your first blood donation (true / false)? ").toLowerCase();
@@ -40,4 +31,13 @@ if(isEligible) {
     console.log(`\n${toTitleCase(name)} is eligible to donate blood!`);
 } else {
     console.log(`\n${toTitleCase(name)} is not eligible to donate blood!`);
+}
+
+// Helper function to convert strings to Title Case
+function toTitleCase(str) {
+    return str
+        .toLowerCase()
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
 }

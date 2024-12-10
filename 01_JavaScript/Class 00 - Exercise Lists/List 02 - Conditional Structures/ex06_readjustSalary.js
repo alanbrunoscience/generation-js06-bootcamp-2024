@@ -16,15 +16,6 @@ Com base na tabela abaixo, escreva um algoritmo que leia o Nome do Colaborador (
 
 const input = require("readline-sync");
 
-// Helper function to convert strings to Title Case
-function toTitleCase(str) {
-    return str
-        .toLowerCase()
-        .split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-}
-
 let adjustedSalary, position;
 
 let employeeName = input.question("1) Enter the employee name: ");
@@ -74,3 +65,12 @@ console.log(`-> Name: ${toTitleCase(employeeName)};\n-> Position: ${position};\n
     currency: 'BRL',
 }).format(adjustedSalary)}.\n`);
 console.log("===========================================\n");
+
+// Helper function to convert strings to Title Case
+function toTitleCase(str) {
+    return str
+        .toLowerCase()
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+}
