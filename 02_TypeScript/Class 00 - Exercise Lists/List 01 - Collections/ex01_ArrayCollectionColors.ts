@@ -4,7 +4,7 @@ const colors: Array<string> = new Array<string>(5);
 
 // Data Input
 console.log("======== Colors Input ========");
-for(let i = 0; i < colors.length; i++) {
+for(let i: number = 0; i < colors.length; i++) {
     colors[i] = readlineSync.question(`\n${i+1}) Enter the color name: `);
 }
 

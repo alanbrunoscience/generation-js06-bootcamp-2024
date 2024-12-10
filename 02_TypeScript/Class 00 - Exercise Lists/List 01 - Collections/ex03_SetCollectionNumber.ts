@@ -3,7 +3,7 @@ import readlineSync = require("readline-sync");
 const numbers: Set<number> = new Set<number>();
 
 console.log("======== Numeric Data Input ========\n");
-for(let i = 0; i < 10; i++) {
+for(let i: number = 0; i < 10; i++) {
     numbers.add(readlineSync.questionInt(`${i+1}) Enter an integer number: `, {limitMessage: "\n-> Invalid data type entered!\n"}));
 }
 
