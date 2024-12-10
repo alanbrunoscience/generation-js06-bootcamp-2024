@@ -1,4 +1,4 @@
-import readlinesync = require("readline-sync");
+import readlineSync = require("readline-sync");
 import { Queue } from "./Queue"
 
 const queue = new Queue<string>();
