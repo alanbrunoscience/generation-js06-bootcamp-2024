@@ -26,7 +26,7 @@ export class Queue<Type> implements queueInterface<Type> {
 
    dequeue(): Type | undefined {
       if (this.isEmpty()) {
-         console.log("A fila está vazia");
+         console.log("\n-> The queue is empty!");
          return;
       } else {
          var element = this.QueueData.shift();
@@ -52,7 +52,7 @@ export class Queue<Type> implements queueInterface<Type> {
 
    peek(): Type | undefined {
       if (this.isEmpty()) {
-         console.log("A fila está vazia");
+         console.log("\n-> The queue is empty!");
          return;
       } else {
          var element = this.QueueData[0];

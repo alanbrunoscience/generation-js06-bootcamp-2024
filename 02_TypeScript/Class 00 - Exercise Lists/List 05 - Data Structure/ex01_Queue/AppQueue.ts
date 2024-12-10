@@ -35,8 +35,20 @@ do {
             break;
 
         case 3:
+
+            if(!queue.isEmpty()) {
+                console.log("\nClient Being Served:\n");
+                console.log(`- ${queue.dequeue()}.`);
+            } else {
+                console.log("\n-> The queue is empty!");
+            }
+                
             break;
+
         case 4:
+
+            
+
             break;
         case 5:
             break;
