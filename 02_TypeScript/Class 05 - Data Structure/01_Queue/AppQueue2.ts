@@ -1,3 +1,9 @@
+/* Fila
+
+- Uma Fila é uma estrutura de dados do tipo FIFO: "o primeiro elemento que entra é o primeiro elemento que sai" (First In, First Out). A ideia fundamental da fila é que só podemos inserir um novo elemento no final da fila e só podemos retirar um elemento do início.
+
+*/
+
 import readlineSync = require("readline-sync");
 import { Queue } from "./Queue"
 
