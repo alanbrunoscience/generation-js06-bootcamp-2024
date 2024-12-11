@@ -53,7 +53,7 @@ do {
             console.log("\n-> Invalid option! Choose an option between 1 and 7.");
     }
 
-} while(option != 7);
+} while(option != 8);
 
 // Functions Declaration
 function menu(): number {
@@ -113,7 +113,7 @@ function removeBookFromStack(): void {
 
     if(!stack.isEmpty()) {
         console.log("\nRemoving The Following Book:\n");
-        console.log(`- ${stack.pop()}.`);
+        console.log(`- '${stack.pop()}'.`);
     } else {
         console.log("\n-> The stack is empty!");
     }
@@ -124,7 +124,7 @@ function bookOnTop(): void {
 
     if(!stack.isEmpty()) {
         console.log("\nThe Book At The Top Of The Stack Is:\n");
-        console.log(`- ${stack.peek()}.`);
+        console.log(`- '${stack.peek()}'.`);
     } else {
         console.log("\n-> The stack is empty!");
     }
