@@ -42,11 +42,16 @@ export class Stack<Type> implements stackInterface<Type> {
 
    printStack(): void {
       for (let i = this.StackData.length - 1; i >= 0 ; i--) {
-         if(i !== (this.StackData.length - 1)) {
-            console.log(`${i+1}º) ${this.StackData[i]};`);
+         if(i === this.StackData.length - 1) {
+            // if(this.StackData.length === 1) {
+               console.log(`${this.StackData.length - i}º) ${this.StackData[i]};`);
+            // } else {
+            //    console.log(`${this.StackData.length - i}º) ${this.StackData[i]};`);
+            // }
          } else {
-            console.log(`${i+1}º) ${this.StackData[i]}.`);
+            console.log(`${this.StackData.length - i}º) ${this.StackData[i]}.`);
          }
+         
       }
    }
 
