@@ -15,7 +15,7 @@ export class Transport {
 	}
 	
 	public displayTransport(): void {
-        console.log("\n******************************************");
+        console.log("\n\n******************************************");
         console.log("          Means of Transport Data          ");
         console.log("******************************************");
         console.log(`\n1) Capacity (Number of passengers): ${this.getCapacity()};`);
