@@ -14,7 +14,7 @@ export class Transport {
 		this._capacity = capacity;
 	}
 	
-	public displayTransport(): void {
+	public display(): void {
         console.log("\n\n******************************************");
         console.log("          Means of Transport Data          ");
         console.log("******************************************");

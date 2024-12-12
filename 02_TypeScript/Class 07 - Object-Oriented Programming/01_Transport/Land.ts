@@ -27,8 +27,8 @@ export class Land extends Transport {
 		this._speed = speed;
 	}
 
-	public displayLandTransp(): void {
-		super.displayTransport();
+	public display(): void {
+		super.display();
         console.log(`2) Number of Wheels: ${this.getNumberOfWheels()};`);
         console.log(`3) Speed: ${this.getSpeed().toFixed(2)} mph;`);
 	}

@@ -47,8 +47,8 @@ export class Car extends Land {
 		this._numberOfGears = numberOfGears;
 	}
 
-	public displayCar(): void {
-		super.displayLandTransp();
+	public display(): void {
+		super.display();
         console.log(`4) Color: ${this.getColor()};`);
         console.log(`5) Number of Doors: ${this.getNumberOfDoors()};`);
         console.log(`6) License Plate: ${this.getLicensePlate()};`);
