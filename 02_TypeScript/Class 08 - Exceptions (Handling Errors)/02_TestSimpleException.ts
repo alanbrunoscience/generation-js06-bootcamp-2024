@@ -1,25 +1,39 @@
 import readline = require("readline-sync");
+import { SimpleException } from "./SimpleException";
 
-let resultado: number | null;
+let result: number | null;
 let loop: boolean = true;
 
+let number1: number = readline.questionFloat("1) Enter the first number: ");
+
 do {
-        let numero1: number = readline.questionFloat("Digite o primeiro numero: ");
-        let numero2: number = readline.questionFloat("Digite o segundo numero: ");
 
-        resultado = dividir(numero1, numero2);
+    try {
+        
+        let number2: number = readline.questionFloat("\n2) Enter the second number: ");
 
-        console.log(`${numero1} / ${numero2} = ${resultado ? resultado : "Não existe divisão por zero!"}`);
+        result = divide(number1, number2);
+
+        // console.log(`${number1} / ${number2} = ${result ? result : "There is no division by zero!"}`);
+        console.log(`\n-> ${number1} / ${number2} = ${result}`);
 
         loop = false;
 
+    } catch(error: any) {
+        if (error instanceof SimpleException) {
+            console.error(error.name);
+            console.error(error.message);
+            console.error("\nTry again!");
+        } else {
+            console.error("\n Unexpected error! "); // Typing a letter
+        }
+    }
+    
 } while (loop);
 
-function dividir(numero1: number, numero2: number): number | null {
+function divide(number1: number, number2: number): number | null {
+    if (number2 == 0)
+        throw new SimpleException("There is no division by zero!");
 
-    if (numero2 == 0)
-        return null;
-
-    return numero1 / numero2;
-
+    return number1 / number2;
 }
