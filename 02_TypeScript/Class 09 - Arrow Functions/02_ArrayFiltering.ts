@@ -32,13 +32,28 @@ let midwestStates: Array<string> = [
     'Brasília'
 ];
 
-console.log("\nList states starting with 'Rio' (filter()):\n");
+console.log("\n1) List states starting with 'Rio' (filter()):\n");
 
 let statesContainRio = states.filter(state => state.includes("Rio"));
 
 console.dir(statesContainRio);
 
-console.log("\nList numbers multiplied by 3 (map()):\n");
+console.log("\n2) List numbers multiplied by 3 (map()):\n");
 let numbersMult3 = sortedNumbers.map(n => n * 3);
 
 console.dir(numbersMult3);
+
+console.log("\n3) List states without repetitions (reduce()):\n");
+let statesWithoutRep = repeatedStates.reduce((acumulator: string[], state) => {
+    if(acumulator.indexOf(state) === -1)
+        acumulator.push(state);
+    return acumulator; // Return the updated accumulator
+}, []); // Initialize accumulator as an empty array
+
+console.dir(statesWithoutRep);
+
+console.log("\n4) Array combination (Spread Operator (...)):\n");
+
+const combinedArray: number[] = [...sortedNumbers, ...disorderedNumbers]
+
+console.dir(combinedArray);
