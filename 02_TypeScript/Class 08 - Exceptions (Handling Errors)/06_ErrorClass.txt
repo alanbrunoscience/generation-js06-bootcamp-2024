@@ -1,0 +1,24 @@
+A Classe Error
+
+- A Classe Error é responsável por definir as Exceções padrões do JavaScript e do TypeScript. A Classe Error também é conhecida como Classe de Erros Integrados;
+
+- A Classe Error também é utilizada como a Classe Base para outras Sub Classes de erro. Estas Sub Classes representam diferentes tipos de erros que podem ocorrer em um código JavaScript/TypeScript. Além disso, elas possuem nome próprio e propriedades, que emitem mensagens específicas, de acordo com a exceção lançada. Veja na lista abaixo os 7 tipos diferentes de exceções, mapeadas pela Classe Error:
+
+1) SyntaxError: Representa um erro de sintaxe, que ocorre ao analisar o código. Se escrevermos o código com a sintaxe errada, o TypeScript gerará um erro do tipo Syntax Error;
+
+2) TypeError: Indica que uma operação ou função foi executada em um tipo incompatível. Quando ocorre um problema de incompatibilidade de tipo de variável ou do tipo de retorno da função, o TypeScript gerará um erro do tipo Type Error;
+
+3) ReferenceError: Ocorre quando uma referência inválida é feita a uma variável ou função que não está definida. Se tentarmos acessar uma variável sem declarar antes, o TypeScript gerará um erro do tipo Reference Error;
+
+4) RangeError: Indica que um valor numérico está fora do intervalo permitido. Se tentarmos acessar algo que está fora de um intervalo pré definido, o TypeScript gerará um erro do tipo Range Error;
+
+5) URIError: Ocorre ao codificar ou decodificar funções e neste processo encontram strings URI malformadas. Este erro geralmente acontece ao passar um parâmetro inválido para a função decodeURI(), o que fará o TypeScript gerar um erro do tipo URI Error;
+
+6) EvalError: Representa erros que ocorrem durante a execução da função global eval(). Esta exceção não é mais lançada porque não é recomendado utilizar a função eval() por questões de segurança da aplicação. Entretanto, a exceção EvalError permanece ativa por questões de compatibilidade com códigos mais antigos;
+
+7) InternalError: indica um erro que ocorreu internamente no Transpilador TypeScript ou no Mecanismo JavaScript. Como esta exceção não segue os padrões, é recomendado não utilizar em Websites, porque ele não funcionará em todos os Navegadores WEB.
+
+Para consultar as mensagens de erro, que podem ser geradas por cada tipo de erro, acesse os links abaixo:
+
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error;
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Errors.
