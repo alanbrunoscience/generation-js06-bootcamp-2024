@@ -1,0 +1,3 @@
+Por que devemos tratar as Exceções?
+
+Quando uma Exceção é tratada, estamos oferecendo alguma forma alternativa para continuar a execução do programa sem que ele seja finalizado devido ao erro. O tratamento de exceções desempenha um papel importante no desenvolvimento de uma aplicação concisa, limpa, legível e de fácil manutenção.

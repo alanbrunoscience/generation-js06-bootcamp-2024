@@ -31,3 +31,11 @@ export function validateAge(age: number): void {
     }
 
 }
+
+/*
+
+- Observe que a exceção: Error foi disparada dentro do Método validarIdade(), exibindo a mensagem do erro, que foi definida pela pessoa desenvolvedora e o programa foi finalizado na sequência.
+
+- Ao executar a instrução throw, o programa tenta encontrar algum bloco try, que possua instrução catch correspondente ao tipo de exceção que foi lançada. Se encontrar uma correspondência, o controle será transferido para essa instrução, caso contrário o programa será finalizado.
+
+*/

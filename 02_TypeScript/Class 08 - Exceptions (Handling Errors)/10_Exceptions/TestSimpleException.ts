@@ -1,16 +1,16 @@
-import readline = require("readline-sync");
+import readlineSync = require("readline-sync");
 import { SimpleException } from "./SimpleException";
 
 let result: number | null;
 let loop: boolean = true;
 
-let number1: number = readline.questionFloat("1) Enter the first number: ");
+let number1: number = readlineSync.questionFloat("1) Enter the first number: ");
 
 do {
 
     try {
         
-        let number2: number = readline.questionFloat("\n2) Enter the second number: ");
+        let number2: number = readlineSync.questionFloat("\n2) Enter the second number: ");
 
         result = divide(number1, number2);
 
