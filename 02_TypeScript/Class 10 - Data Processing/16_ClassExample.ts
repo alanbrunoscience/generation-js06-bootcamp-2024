@@ -44,7 +44,7 @@ let numbersMult3 = sortedNumbers.map(n => n * 3);
 console.dir(numbersMult3);
 
 console.log("\n3) List states without repetitions (reduce()):\n");
-let statesWithoutRep1 = repeatedStates.reduce((acumulator: string[], state) => {
+let statesWithoutRep1 = repeatedStates1.reduce((acumulator: string[], state) => {
     if(acumulator.indexOf(state) === -1)
         acumulator.push(state);
     return acumulator; // Return the updated accumulator
