@@ -1,10 +1,10 @@
-let sortedNumbers: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sortedNumbers1: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  
-let repeatedNumbers: Array<number> = [1, 2, 3, 1, 4, 5, 6, 2, 7, 8, 9, 3, 4, 10, 7];
+let repeatedNumbers1: Array<number> = [1, 2, 3, 1, 4, 5, 6, 2, 7, 8, 9, 3, 4, 10, 7];
  
-let disorderedNumbers: Array<number> = [6, 7, 8, 1, 4, 5, 9, 10, 2, 3];
+let disorderedNumbers1: Array<number> = [6, 7, 8, 1, 4, 5, 9, 10, 2, 3];
  
-let states: Array<string> = [
+let states1: Array<string> = [
     "São Paulo",
     "Rio de Janeiro",
     "Minas Gerais",
@@ -14,7 +14,7 @@ let states: Array<string> = [
     "Paraná"
 ];
  
-let repeatedStates: Array<string> = [
+let repeatedStates1: Array<string> = [
     'São Paulo',
     'Rio de Janeiro',
     'Minas Gerais',
@@ -25,7 +25,7 @@ let repeatedStates: Array<string> = [
     'Rio de Janeiro',
 ];
  
-let midwestStates: Array<string> = [
+let midwestStates1: Array<string> = [
     'Goiás',
     'Mato Grosso',
     'Mato Grosso do Sul',
@@ -34,7 +34,7 @@ let midwestStates: Array<string> = [
 
 console.log("\n1) List states starting with 'Rio' (filter()):\n");
 
-let statesContainRio = states.filter(state => state.includes("Rio"));
+let statesContainRio1 = states.filter(state => state.includes("Rio"));
 
 console.dir(statesContainRio);
 
@@ -44,7 +44,7 @@ let numbersMult3 = sortedNumbers.map(n => n * 3);
 console.dir(numbersMult3);
 
 console.log("\n3) List states without repetitions (reduce()):\n");
-let statesWithoutRep = repeatedStates.reduce((acumulator: string[], state) => {
+let statesWithoutRep1 = repeatedStates.reduce((acumulator: string[], state) => {
     if(acumulator.indexOf(state) === -1)
         acumulator.push(state);
     return acumulator; // Return the updated accumulator

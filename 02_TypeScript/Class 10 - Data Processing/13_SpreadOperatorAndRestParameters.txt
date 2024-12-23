@@ -1,0 +1,7 @@
+Operador Spread e Parâmetros Rest
+
+- O Operador Spread e os Parâmetros Rest são dois recursos criados com o objetivo de simplificar o uso de múltiplos parâmetros com funções, arrays e Objetos. Como o TypeScript/JavaScript usa os três pontos (...) para representar tanto o Operador Spread quanto os Parâmetros Rest, as pessoas desenvolvedoras acabam se confundindo e achando que ambos são a mesma coisa.
+
+Qual é a diferença entre Operador Spread e Parâmetros Rest?
+
+- A principal diferença entre o Operador Spread e os Parâmetros Rest é que o Operador Spread transforma um array em diversos parâmetros para uma função, enquanto os Parâmetros Rest nos permite transformar um número indeterminado de parâmetros em um array. Vamos ver na prática!
