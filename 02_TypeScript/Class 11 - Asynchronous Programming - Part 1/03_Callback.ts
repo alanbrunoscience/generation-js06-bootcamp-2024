@@ -15,4 +15,4 @@ export function function02(calls_Function01: any) {
 
 function02(function01);
 
-// Observe que a função chamada funcaoDois(), recebe como parâmetro a função chamada funcaoUm(). A relação entre as duas funções foi criada através da função de Callback chamada chama_funcaoUm().
+// Observe que a função chamada function02(), recebe como parâmetro a função chamada function01(). A relação entre as duas funções foi criada através da função de Callback chamada calls_Function01().

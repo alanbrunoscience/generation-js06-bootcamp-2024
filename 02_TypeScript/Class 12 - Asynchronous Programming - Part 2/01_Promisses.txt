@@ -1,0 +1,24 @@
+Promises
+
+- Promises é um conceito essencial do TypeScript/JavaScript. Elas estão presentes em praticamente todo o ecossistema da linguagem TypeScript/JavaScript;
+
+- Promises é um padrão de desenvolvimento, representado por um objeto TypeScript/JavaScript, que permite a execução de processamentos no formato assíncrono. Uma vez que é definido como um objeto, é possível guardar valores que poderão ser usados em outro momento do seu código, enquanto você executa outras tarefas em paralelo. Toda Promise pode assumir diversos Estados, que são utilizados para definirmos o sucesso ou a falha do processamento dentro do nosso código.
+
+Como as Promises funcionam?
+
+- Uma Promise sempre será uma ação que será executada no futuro, que pode ou não ser bem sucedida, podendo assumir vários estados. Por isso são chamadas de Promessas, porque na prática a função "promete" trazer um retorno em algum momento no futuro, que pode ou não ser bem sucedido. Os Estados são utilizados para definir se uma Promise foi bem sucedida ou não.
+
+Uma Promise possui três estados:
+
+- Pendente (Pending): Esta é a fase inicial. Não acontece nada aqui. Fazendo uma analogia com a Sorveteria é o momento em que o seu cliente está pensando no pedido, mas ainda não o fez;
+
+- Resolvido (Fulfilled): Significa que seu cliente recebeu o seu sorvete e está muito feliz;
+
+- Rejeitado (Rejected): Significa que seu cliente não recebeu o seu sorvete e saiu muito insatisfeito da Sorveteria.
+
+Sintaxe:
+
+new Promise( ( resolve, reject ) => { } )
+
+- resolve: função para retornar o resultado da promise;
+- reject: função para retornar o erro da promise.
