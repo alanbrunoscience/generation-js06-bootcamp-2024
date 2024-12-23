@@ -67,6 +67,6 @@ order(0, production);
 
 - Percebeu o quanto este código é extenso e confuso? São 7 Funções Callback aninhadas, uma dentro da outra!
 
-- O Código acima é popularmente conhecido entre as pessoas desenvolvedoras TypeScript/JavaScript de Callback Hell! ou O Inferno das Callbacks!
+- O Código acima é popularmente conhecido entre as pessoas desenvolvedoras TypeScript/JavaScript de Callback Hell! ou O Inferno das Callbacks! Qual é a Solução? A resposta para esta pergunta é: Promises!
 
 */
