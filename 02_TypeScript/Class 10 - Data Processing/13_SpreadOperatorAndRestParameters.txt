@@ -5,3 +5,8 @@ Operador Spread e Parâmetros Rest
 Qual é a diferença entre Operador Spread e Parâmetros Rest?
 
 - A principal diferença entre o Operador Spread e os Parâmetros Rest é que o Operador Spread transforma um array em diversos parâmetros para uma função, enquanto os Parâmetros Rest nos permite transformar um número indeterminado de parâmetros em um array. Vamos ver na prática!
+
+PARA LEMBRAR:
+
+- Spread: transforma um array em diversos parâmetros;
+- Parâmetros Rest: permite transformar um número indeterminado de parâmetros em um array.
