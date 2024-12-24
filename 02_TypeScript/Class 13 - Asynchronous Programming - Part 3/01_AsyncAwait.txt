@@ -1,0 +1,21 @@
+Async/Await
+
+As palavras-chave async e await, é uma sintaxe criada com objetivo de simplificar a programação assíncrona, facilitando o fluxo de escrita e leitura do código. Em outras palavras, torna possível escrever um código que funciona de forma assíncrona, porém é lido e estruturado de forma síncrona. O async/await também trabalha com o código assíncrono baseado em Promises, porém esconde as promessas para que a leitura e a escrita sejam mais limpas.
+
+Ao declarar uma função com a palavra reservada async, nós poderemos utilizar a palavra-chave await antes de qualquer função que retorne uma promise. Dessa forma, a execução da função externa (a função async), será pausada até que a Promise seja resolvida.
+
+A palavra-chave await recebe uma Promise e a transforma em um valor de retorno (ou lança uma exceção em caso de erro). Quando utilizamos o await, o TypeScript/JavaScript vai aguardar até que a Promise seja finalizada. Se for finalizada com sucesso (o termo utilizado é fulfilled), o valor obtido é retornado. Se a Promise for rejeitada (o termo utilizado é rejected), é retornado o erro lançado pela exceção.
+
+Em relação ao tratamento e erros, utilizaremos a estrutura try-catch-finally padrão do TypeScript/Javascript.
+
+Sintaxe:
+
+async function nome_da_funcao(){
+    
+   await funcao_retorna_promise();
+
+}
+
+Observe que a função foi declarada com a palavra chave async, indicando que ela será do tipo assíncrona. No corpo da função, utilizaremos a palavra chave await para indicar que uma função que retorna uma Promise será executada. Importante reforçar que a palavra chave await só pode ser utilizada em uma função assíncrona.
+
+Para uma melhor compreensão, vamos reescrever o código da nossa Sorveteria utilizando Async/Await!

@@ -1,5 +1,3 @@
-import { resolve } from "path";
-
 // The object that defines the ice cream shop stock
 let stockIceCream = {
     Fruits: ["strawberry", "grape", "banana", "apple"],
